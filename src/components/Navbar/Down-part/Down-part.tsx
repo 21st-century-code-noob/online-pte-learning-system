@@ -12,7 +12,7 @@ const DIV = styled.div`
 `
 const STRONG = styled.strong`
   position: relative;
-  top: 20%;
+  top: 25%;
   left: 5%;
   font-size: 25px;
   color: white;
@@ -36,6 +36,7 @@ const LI = styled.li`
   align-item: center;
   .title {
     bottom: 15%;
+    padding: 15px 5px 15px 5px;
   }
 `
 
