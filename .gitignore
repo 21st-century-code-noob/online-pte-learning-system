@@ -24,3 +24,7 @@ yarn-error.log*
 
 #macOS
 .DS_Store
+
+#prettierrc eslint
+.eslintrc.js
+.prettierrc.js

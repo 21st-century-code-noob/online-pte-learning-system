@@ -28,7 +28,8 @@ module.exports = {
     "@typescript-eslint/no-this-alias": "off",
     "@typescript-eslint/triple-slash-reference": "off",
     "@typescript-eslint/no-explicit-any": ["error", { fixToUnknown: true }],
-    "simple-import-sort/imports": "error"
+    // "simple-import-sort/imports": "error",
+    "prettier/prettier": "off"
   },
   settings: {
     react: {

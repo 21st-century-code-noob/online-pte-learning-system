@@ -4,7 +4,7 @@ const color = {
   secondary_deep: "#207971",
   accent: "#2D3748",
   text_gray: "#A0AEC0",
-  text_dark: "#2D3748"
+  text_dark: "#2D3748",
   background_color: "#eeeded"
 }
 

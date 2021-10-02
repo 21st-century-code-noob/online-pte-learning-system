@@ -1,7 +1,9 @@
 
+import Footer from "components/Footer/Footer"
 import Hero from "components/Hero/Hero"
 import { PracticeArea } from "components/PracticeArea/PracticeArea"
 import StudyMaterial from "components/StudyMaterial/StudyMaterial"
+import Testimonial from "components/Testimonial/Testimonial"
 import React from "react"
 import { ThemeProvider } from "styled-components"
 import { createGlobalStyle } from "styled-components"
@@ -23,6 +25,8 @@ function App() {
       <Hero />
       <PracticeArea />
       <StudyMaterial />
+      <Testimonial />
+      <Footer />
     </ThemeProvider>
   )
 }
