@@ -6,6 +6,17 @@ import Title from "./Components/Title/Title"
 import { Container, Wrapper } from "./Testimonial.style"
 import { CardContainer } from "./Testimonial.style"
 
+const person1: { firstName: string; lastName: string; location: string; image: string; content: string; goal: number } =
+  {
+    firstName: "Viezh Rober",
+    lastName: "Warsay",
+    location: "Poland",
+    image: "/static/images/avatar/1.jpg",
+    content:
+      "Lorem lpsum is simply dummmy text of pringting and typeseeting industy. Lorem lpsum has sbeen theindsut standard.",
+    goal: 4.5
+  }
+
 const Testimonial = () => {
   return (
     <Wrapper>
@@ -21,9 +32,9 @@ const Testimonial = () => {
                         cardText: 'dddddd',
                     }]}
                 </Card> */}
-          <Card />
-          <Card />
-          <Card />
+          <Card {...person1} />
+          <Card {...person1} />
+          <Card {...person1} />
         </CardContainer>
       </Container>
     </Wrapper>
