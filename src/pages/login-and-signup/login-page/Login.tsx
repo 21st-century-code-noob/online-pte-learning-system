@@ -1,6 +1,10 @@
 import React from 'react'
+import Navbar from 'pages/landing-page/components/Navbar/Navbar'
+import Footer from 'pages/landing-page/components/Footer/Footer'
 import Title from './components/Title/Title'
 import TextField from '@mui/material/TextField';
+import { styled } from '@mui/material/styles';
+
 import Buttons from '../Styles/Buttons.style'
 import TextContainer from '../Styles/TextContainer.style'
 import { Container } from './Login.style'
@@ -8,12 +12,15 @@ import { Wrapper } from './Login.style'
 import { Background } from './Login.style';
 import { Block } from './Login.style'
 import { Words } from './Login.style'
+
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom'
+
 
 const Login = () => {
     return (
         <div>
+
             {/* <Navbar /> */}
             <Block></Block>
             <Background>
@@ -46,11 +53,13 @@ const Login = () => {
                                     <Button variant='text' color='success'>Sign Up</Button>
                                 </Link>
                             </p>
+
                             </Words>
                     </Container>
                 </Wrapper>
             </Background>
             {/* <Footer /> */}
+
         </div>
     )
 }

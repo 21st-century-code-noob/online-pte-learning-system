@@ -1,12 +1,20 @@
 import React from 'react'
+import Navbar from 'pages/landing-page/components/Navbar/Navbar'
+import Footer from 'pages/landing-page/components/Footer/Footer'
 import Title from './components/Title/Title'
+import TextField from '@mui/material/TextField';
+import { styled } from '@mui/material/styles';
 import Buttons from '../Styles/Buttons.style'
+import TextContainer from '../Styles/TextContainer.style'
+
 import { Container } from './Signup.style'
 import { Wrapper } from './Signup.style'
 import { Background } from './Signup.style';
 import { Block } from './Signup.style'
+
 import { Words } from './Signedup.style'
 import { Link } from 'react-router-dom'
+
 
 const Signedup = () => {
     return (
@@ -31,5 +39,3 @@ const Signedup = () => {
 }
 
 export default Signedup
-
-
