@@ -4,6 +4,7 @@ import Footer from 'pages/landing-page/components/Footer/Footer'
 import Title from './components/Title/Title'
 import TextField from '@mui/material/TextField';
 import { styled } from '@mui/material/styles';
+
 import Buttons from '../Styles/Buttons.style'
 import TextContainer from '../Styles/TextContainer.style'
 import { Container } from './Login.style'
@@ -12,32 +13,15 @@ import { Background } from './Login.style';
 import { Block } from './Login.style'
 import { Words } from './Login.style'
 
-// const CssTextField = styled(TextField)({
-//     '& label.Mui-focused': {
-//       color: 'green',
-//     },
-//     '& .MuiInput-underline:after': {
-//       borderBottomColor: 'green',
-//     },
-//     '& .MuiOutlinedInput-root': {
-//       '& fieldset': {
-//         borderColor: 'red',
-//       },
-//       '&:hover fieldset': {
-//         borderColor: 'yellow',
-//       },
-//       '&.Mui-focused fieldset': {
-//         borderColor: 'green',
-//       },
-//     },
-//   });
-
+import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom'
 
 
 const Login = () => {
     return (
         <div>
-            <Navbar />
+
+            {/* <Navbar /> */}
             <Block></Block>
             <Background>
                 <Wrapper>
@@ -64,12 +48,18 @@ const Login = () => {
                             <Buttons variant="contained" size="large">SIGN IN</Buttons>
                             <br/>
                             <Words>
-                            <p>Don't have an account?<span> Sign Up</span></p>
+                            <p>Don't have an account? 
+                                <Link to='/signup'>
+                                    <Button variant='text' color='success'>Sign Up</Button>
+                                </Link>
+                            </p>
+
                             </Words>
                     </Container>
                 </Wrapper>
             </Background>
-            <Footer />
+            {/* <Footer /> */}
+
         </div>
     )
 }

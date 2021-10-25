@@ -6,17 +6,19 @@ import TextField from '@mui/material/TextField';
 import { styled } from '@mui/material/styles';
 import Buttons from '../Styles/Buttons.style'
 import TextContainer from '../Styles/TextContainer.style'
+
 import { Container } from './Signup.style'
 import { Wrapper } from './Signup.style'
 import { Background } from './Signup.style';
 import { Block } from './Signup.style'
-// import { Words } from  './Signup.style'
+
 import { Words } from './Signedup.style'
+import { Link } from 'react-router-dom'
+
 
 const Signedup = () => {
     return (
         <div>
-            <Navbar />
             <Block />
             <Background>
                 <Wrapper>
@@ -26,15 +28,14 @@ const Signedup = () => {
                                 <p>Welcome to Cuckoo!</p>
                                 <p>Cindy</p>
                             </Words>
-                            <Buttons variant="contained" size="large">SIGN IN NOW</Buttons>
+                            <Link to='/login'>
+                                <Buttons variant="contained" size="large">SIGN IN NOW</Buttons>
+                                </Link>
                         </Container>
                 </Wrapper>
             </Background>
-            <Footer />
         </div>
     )
 }
 
 export default Signedup
-
-
