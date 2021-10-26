@@ -1,6 +1,6 @@
 import { KeyboardArrowDown as KeyboardArrowDownIcon } from "@material-ui/icons"
+import { Link } from "react-router-dom"
 import styled from "styled-components"
-import { Link } from 'react-router-dom'
 
 const DIV = styled.div`
   max-width: ${(props) => props.theme.margin.max_width};
@@ -62,7 +62,7 @@ const Down = () => (
     <DIV>
       <STRONG>Cuckoo</STRONG>
       <UL>
-        <Link to='/'>
+        <Link to="/">
           <LI>
             <ALink href="#">Home</ALink>
           </LI>
@@ -75,12 +75,12 @@ const Down = () => (
             <KeyboardArrowDownIcon></KeyboardArrowDownIcon>
           </LI>
         </Link>
-        <Link to='/login'>
+        <Link to="/login">
           <LI>
             <ALink href="#">Login</ALink>
           </LI>
         </Link>
-        <Link to='/signup'>
+        <Link to="/signup">
           <LI>
             <ALink href="#" white>
               Sign up
