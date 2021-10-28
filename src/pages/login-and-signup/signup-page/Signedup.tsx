@@ -1,12 +1,8 @@
-import { styled } from "@mui/material/styles"
-import TextField from "@mui/material/TextField"
-import Footer from "pages/landing-page/components/Footer/Footer"
-import Navbar from "pages/landing-page/components/Navbar/Navbar"
-import React from "react"
 import { Link } from "react-router-dom"
 
+import Footer from "../../../pages/public-component/Footer/Footer"
+import Navbar from "../../../pages/public-component/Navbar"
 import Buttons from "../Styles/Buttons.style"
-import TextContainer from "../Styles/TextContainer.style"
 import Title from "./components/Title/Title"
 import { Words } from "./Signedup.style"
 import { Container } from "./Signup.style"
@@ -17,6 +13,7 @@ import { Block } from "./Signup.style"
 const Signedup = () => {
   return (
     <div>
+      <Navbar />
       <Block />
       <Background>
         <Wrapper>
@@ -34,6 +31,7 @@ const Signedup = () => {
           </Container>
         </Wrapper>
       </Background>
+      <Footer />
     </div>
   )
 }

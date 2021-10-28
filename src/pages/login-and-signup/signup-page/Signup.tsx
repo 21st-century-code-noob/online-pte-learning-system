@@ -1,14 +1,11 @@
 import { Visibility, VisibilityOff } from "@mui/icons-material"
 import { FormControl, FormHelperText, IconButton, Input, InputAdornment, InputLabel } from "@mui/material"
 import Button from "@mui/material/Button"
-import { styled } from "@mui/material/styles"
-import TextField from "@mui/material/TextField"
-import Footer from "pages/landing-page/components/Footer/Footer"
-import Navbar from "pages/landing-page/components/Navbar/Navbar"
 import React from "react"
 import { Link } from "react-router-dom"
-import { BooleanLiteral } from "typescript"
 
+import Footer from "../../../pages/public-component/Footer/Footer"
+import Navbar from "../../../pages/public-component/Navbar"
 import Buttons from "../Styles/Buttons.style"
 import TextContainer from "../Styles/TextContainer.style"
 import Title from "./components/Title/Title"
@@ -18,9 +15,9 @@ import { Background } from "./Signup.style"
 import { Block } from "./Signup.style"
 import { Words } from "./Signup.style"
 
-interface State {
-  showPassword: boolean
-}
+// interface State {
+//   showPassword: boolean
+// }
 
 const Signup = () => {
   const [passwordVisibility, setPasswordVisibility] = React.useState<boolean>(false)
@@ -35,6 +32,7 @@ const Signup = () => {
 
   return (
     <div>
+      <Navbar />
       <Block />
       <Background>
         <Wrapper>
@@ -89,6 +87,7 @@ const Signup = () => {
           </Container>
         </Wrapper>
       </Background>
+      <Footer />
     </div>
   )
 }
