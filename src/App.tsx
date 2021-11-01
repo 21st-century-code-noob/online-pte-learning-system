@@ -1,3 +1,4 @@
+import dashboardPage from "pages/dashboard/dashboardPage"
 import Hero from "pages/landing-page/components/Hero/Hero"
 import { PracticeArea } from "pages/landing-page/components/PracticeArea/PracticeArea"
 import StudyMaterial from "pages/landing-page/components/StudyMaterial/StudyMaterial"
@@ -46,6 +47,7 @@ function App() {
           <Route path="/login" component={Login} />
           <Route path="/signup" component={Signup} />
           <Route path="/signedup" component={Signedup} />
+          <Route path="/dashboard" component={dashboardPage} />
         </Switch>
       </Router>
     </ThemeProvider>
