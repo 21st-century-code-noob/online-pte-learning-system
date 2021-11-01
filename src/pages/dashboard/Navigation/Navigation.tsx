@@ -19,6 +19,12 @@ const StyledA = styled.a`
   color: #a0aec0;
 `
 
+const StyledButton = styled.button`
+  background-color: transparent;
+  border: none;
+  padding: 0;
+`
+
 const Navigation = () => {
   return (
     <div>
@@ -27,7 +33,9 @@ const Navigation = () => {
         <StyledA>My Learning</StyledA>
         <img src={bell} alt="remindIcon" />
         <img src={account} alt="profileIcon" />
-        <ArrowDownIcon />
+        <StyledButton>
+          <ArrowDownIcon />
+        </StyledButton>
       </StyledFlexUp>
       <StyledFlexDown>
         <Link to="/">
