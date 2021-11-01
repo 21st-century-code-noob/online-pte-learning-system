@@ -8,7 +8,7 @@ import Sidebar from "./Sidebar/Sidebar"
 const Wrapper = styled.div`
   background-color: ${(props) => props.theme.color.background_color};
   display: flex;
-  padding-top: 50px;  
+  padding-top: 50px;
 `
 
 const dashboardPage = () => {
