@@ -1,11 +1,9 @@
 import Button from "@mui/material/Button"
-import { styled } from "@mui/material/styles"
 import TextField from "@mui/material/TextField"
-import Footer from "pages/landing-page/components/Footer/Footer"
-import Navbar from "pages/landing-page/components/Navbar/Navbar"
-import React from "react"
 import { Link } from "react-router-dom"
 
+import Footer from "../../../pages/public-component/Footer/Footer"
+import Navbar from "../../../pages/public-component/Navbar/Navbar"
 import Buttons from "../Styles/Buttons.style"
 import TextContainer from "../Styles/TextContainer.style"
 import Title from "./components/Title/Title"
@@ -18,7 +16,7 @@ import { Words } from "./Login.style"
 const Login = () => {
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <Block></Block>
       <Background>
         <Wrapper>
@@ -59,7 +57,7 @@ const Login = () => {
           </Container>
         </Wrapper>
       </Background>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }
