@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   padding-top: 50px;
 `
 
-const dashboardPage = () => {
+const DashboardPage = () => {
   return (
     <>
       <Wrapper>
@@ -26,4 +26,4 @@ const dashboardPage = () => {
   )
 }
 
-export default dashboardPage
+export default DashboardPage

@@ -2,11 +2,11 @@ import Button from "@mui/material/Button"
 import { styled } from "@mui/material/styles"
 
 const Buttons = styled(Button)({
-  margin: "10px",
+  margin: "40px 0 20px 0",
+  width: "100%",
   boxShadow: "none",
   textTransform: "none",
   fontSize: 16,
-  padding: "12px 150px",
   border: "1px solid",
   lineHeight: 1.5,
   backgroundColor: "#3bcbbe",

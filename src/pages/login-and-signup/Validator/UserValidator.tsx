@@ -8,6 +8,6 @@ export const emailValidator = (email: string) => {
   return regex.test(email)
 }
 
-// export const passwordValidator = (password: string) => {
-//   const regex = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).*$/
-// }
+export const passwordValidator = (password: string) => {
+  const regex = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).*$/
+}

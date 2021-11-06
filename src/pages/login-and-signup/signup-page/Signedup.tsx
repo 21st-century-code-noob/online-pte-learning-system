@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 import Footer from "../../../pages/public-component/Footer/Footer"
 import Navbar from "../../../pages/public-component/Navbar"
@@ -10,7 +10,10 @@ import { Wrapper } from "./Signup.style"
 import { Background } from "./Signup.style"
 import { Block } from "./Signup.style"
 
-const Signedup = () => {
+const Signedup = (props) => {
+  const { state } = useLocation()
+  const { username } = state
+
   return (
     <div>
       <Navbar />
@@ -21,7 +24,7 @@ const Signedup = () => {
           <Container>
             <Words>
               <p>Welcome to Cuckoo!</p>
-              <p>Cindy</p>
+              <p>{username}</p>
             </Words>
             <Link to="/login">
               <Buttons variant="contained" size="large">
