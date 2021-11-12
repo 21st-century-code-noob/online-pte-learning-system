@@ -2,6 +2,7 @@ const color = {
   primary: "#3BCBBE",
   secondary: "#BFEEE9",
   secondary_deep: "#207971",
+  status: "#feae84",
   accent: "#2D3748",
   text_gray: "#A0AEC0",
   text_darkgray: "#718096",
