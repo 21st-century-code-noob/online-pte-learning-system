@@ -9,14 +9,10 @@ import {
   InputAdornment,
   InputLabel
 } from "@mui/material"
-import Button from "@mui/material/Button"
-import TextField from "@mui/material/TextField"
 import axios, { AxiosRequestConfig } from "axios"
-import Footer from "pages/public-component/Footer/Footer"
-import Navbar from "pages/public-component/Navbar/Navbar"
 import React from "react"
 import { useForm } from "react-hook-form"
-import { Link } from "react-router-dom"
+import { useNavigate } from "react-router"
 
 import Buttons from "../Styles/Buttons.style"
 import TextContainer from "../Styles/TextContainer.style"
@@ -25,13 +21,12 @@ import { Container } from "./Login.style"
 import { Wrapper } from "./Login.style"
 import { Background } from "./Login.style"
 import { Block } from "./Login.style"
-import { Words } from "./Login.style"
 
 const Login = () => {
   const [passwordVisibility, setPasswordVisibility] = React.useState<boolean>(false)
   const [backdropOpen, setBackdropOpen] = React.useState<boolean>(false)
   const [submitButtonDisabled, setSubmitButtonDisabled] = React.useState<boolean>(false)
-  //const history = useHistory()
+  const navigate = useNavigate()
 
   const {
     register,
@@ -64,16 +59,15 @@ const Login = () => {
         const refreshToken = response.data.refresh_token
         localStorage.setItem("access", accessToken)
         localStorage.setItem("refresh", refreshToken)
-        console.log("LocalStorage: " + localStorage.getItem("access"))
+        navigate("/platform/dashboard")
         setSubmitButtonDisabled(false)
         setBackdropOpen(false)
       })
       .catch((err) => {
-        if (err.response.status === 403) {
-          console.log("403 not found")
-          setError("password", { message: "Username and password didn't match." })
+        if (err.response?.status) {
+          setError("username", { message: err.response?.data })
         } else {
-          alert("There's an error. Please check your connection.")
+          alert("Network error. Please check your connection.")
         }
         setSubmitButtonDisabled(false)
         setBackdropOpen(false)
@@ -82,7 +76,6 @@ const Login = () => {
 
   return (
     <div>
-      <Navbar />
       <Block></Block>
       <Background>
         <Wrapper>
@@ -149,7 +142,6 @@ const Login = () => {
           </Container>
         </Wrapper>
       </Background>
-      <Footer />
       <Backdrop sx={{ color: "#fff", zIndex: "99" }} open={backdropOpen}>
         <CircularProgress color="inherit" />
       </Backdrop>

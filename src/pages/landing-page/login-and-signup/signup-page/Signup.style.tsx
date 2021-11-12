@@ -1,15 +1,15 @@
+import backimg from "assets/images/Login/Group1.png"
 import styled from "styled-components"
-
-import backimg from "../../../assets/images/Login/Group1.png"
 
 export const Container = styled.div`
   background-color: #ffff;
   min-width: 600px;
-  max-height: 327px;
+  max-height: 491px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2rem 0;
 `
 
 export const Wrapper = styled.div`

@@ -67,7 +67,7 @@ const Down = () => (
             <ALink href="#">Home</ALink>
           </LI>
         </Link>
-        <Link to="/dashboard">
+        <Link to="/platform/dashboard">
           <LI>
             <ALink href="#" className="title">
               PTE Practice

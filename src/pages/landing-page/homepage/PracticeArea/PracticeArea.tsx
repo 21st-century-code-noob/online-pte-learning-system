@@ -1,6 +1,7 @@
-import { PracticeAreaCards } from "pages/landing-page/components/PracticeArea/Components/PracticeAreaCard/PracticeAreaCard"
-import { WeeklyPredictionCard } from "pages/landing-page/components/PracticeArea/Components/WeeklyPredictionCard/WeeklyPredictionCard"
+import { WeeklyPredictionCard } from "pages/landing-page/homepage/PracticeArea/Components/WeeklyPredictionCard/WeeklyPredictionCard"
 import styled from "styled-components"
+
+import { PracticeAreaCards } from "./Components/PracticeAreaCard/PracticeAreaCard"
 
 const PracticeAreaWrapper = styled.div`
   padding: ${(props) => props.theme.margin.padding_section};

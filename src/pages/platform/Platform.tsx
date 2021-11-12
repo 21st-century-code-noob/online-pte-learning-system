@@ -1,7 +1,8 @@
 import Footer from "pages/public-component/Footer/Footer"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import styled from "styled-components"
 
-import Content from "./Content/Content"
+import Dashboard from "./Dashboard/Dashboard"
 import Navigation from "./Navigation/Navigation"
 import Sidebar from "./Sidebar/Sidebar"
 
@@ -11,14 +12,16 @@ const Wrapper = styled.div`
   padding-top: 50px;
 `
 
-const DashboardPage = () => {
+const Platform = () => {
   return (
     <>
       <Wrapper>
         <Sidebar />
         <div>
           <Navigation />
-          <Content />
+          <Routes>
+            <Route path="/dashboard" element={<Dashboard />} />
+          </Routes>
         </div>
       </Wrapper>
       <Footer />
@@ -26,4 +29,4 @@ const DashboardPage = () => {
   )
 }
 
-export default DashboardPage
+export default Platform

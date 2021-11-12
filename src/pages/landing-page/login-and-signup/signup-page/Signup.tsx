@@ -15,8 +15,6 @@ import React from "react"
 import { useForm } from "react-hook-form"
 import { useNavigate } from "react-router-dom"
 
-import Footer from "../../../pages/public-component/Footer/Footer"
-import Navbar from "../../../pages/public-component/Navbar"
 import Buttons from "../Styles/Buttons.style"
 import TextContainer from "../Styles/TextContainer.style"
 import Title from "./components/Title/Title"
@@ -77,7 +75,6 @@ const Signup = () => {
 
   return (
     <div>
-      <Navbar />
       <Block />
       <Background>
         <Wrapper>

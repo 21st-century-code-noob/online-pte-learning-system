@@ -36,9 +36,9 @@ const SubTitleGap = styled(SubTitle)`
   margin-top: 100px;
 `
 
-const Content = () => {
+const Dashboard = () => {
   return (
-    <>
+    <div>
       <FlexRow>
         <StyledDiv>
           <Title>
@@ -57,8 +57,8 @@ const Content = () => {
         </div>
       </FlexRow>
       <StudyMater />
-    </>
+    </div>
   )
 }
 
-export default Content
+export default Dashboard
