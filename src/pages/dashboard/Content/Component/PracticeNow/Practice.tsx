@@ -1,10 +1,8 @@
-import headset from "assets/images/Dashboard/icon/headset.svg"
-import menu from "assets/images/Dashboard/icon/menu-book.svg"
-import mic from "assets/images/Dashboard/icon/mic.svg"
-import pen from "assets/images/Dashboard/icon/pen.svg"
+import Listening from "pages/public-component/Icons/Listening"
+import Reading from "pages/public-component/Icons/Reading"
+import Speaking from "pages/public-component/Icons/Speaking"
+import Writing from "pages/public-component/Icons/Writing"
 import styled from "styled-components"
-
-import IconNew from "./Component/IconNew"
 
 const Row = styled.div`
   display: flex;
@@ -16,18 +14,10 @@ const Row = styled.div`
 const Practice = () => {
   return (
     <Row>
-      <IconNew source={mic} describe="micIcon">
-        Speaking
-      </IconNew>
-      <IconNew source={headset} describe="headsetIcon">
-        Listening
-      </IconNew>
-      <IconNew source={menu} describe="BookIcon">
-        Reading
-      </IconNew>
-      <IconNew source={pen} describe="penIcon">
-        Writing
-      </IconNew>
+      <Speaking />
+      <Listening />
+      <Reading />
+      <Writing />
     </Row>
   )
 }

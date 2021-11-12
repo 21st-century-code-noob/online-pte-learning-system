@@ -12,7 +12,7 @@ const StyledDiv = styled.div`
 
 const FlexRow = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 `
 
 const StyledImg = styled.img`
@@ -29,6 +29,7 @@ const Title = styled.div`
 const SubTitle = styled.h2`
   display: inline-block;
   padding-bottom: 10px;
+  margin-top: 50px;
   border-bottom: 6px solid;
   border-color: #bfeee9;
 `

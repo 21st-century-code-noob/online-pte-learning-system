@@ -8,10 +8,14 @@ import PracBar from "./Components/PracBar"
 import StuCBar from "./Components/StuCBar"
 import StuMBar from "./Components/StuMBar"
 
-const ColumnDiv = styled.div<{ mar?: string }>`
+const ColumnDiv = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: ${(props) => props.mar || "0px"};
+`
+
+const ColumnDivNew = styled(ColumnDiv)`
+  margin-top: 30px;
+  margin-left: 55px;
 `
 
 const StyledImageI = styled.img`
@@ -25,9 +29,9 @@ const StyledImageII = styled.img`
 
 const Sidebar = () => {
   return (
-    <ColumnDiv mar="55px">
+    <ColumnDivNew>
       <ColumnDiv>
-        <StyledImageI src={logoImage} alt="logo" />
+        <StyledImageI id="top" src={logoImage} alt="logo" />
         <StyledImageII src={dashLine} alt="line" />
         <HomeBar />
         <PracBar />
@@ -35,7 +39,7 @@ const Sidebar = () => {
         <StuMBar />
         <ContBar />
       </ColumnDiv>
-    </ColumnDiv>
+    </ColumnDivNew>
   )
 }
 
