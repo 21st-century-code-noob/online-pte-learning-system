@@ -9,10 +9,12 @@ import {
   InputAdornment,
   InputLabel
 } from "@mui/material"
+import Button from "@mui/material/Button"
+import TextField from "@mui/material/TextField"
 import axios, { AxiosRequestConfig } from "axios"
 import React from "react"
 import { useForm } from "react-hook-form"
-import { useNavigate } from "react-router"
+import { Link } from "react-router-dom"
 
 import Buttons from "../Styles/Buttons.style"
 import TextContainer from "../Styles/TextContainer.style"
@@ -21,12 +23,13 @@ import { Container } from "./Login.style"
 import { Wrapper } from "./Login.style"
 import { Background } from "./Login.style"
 import { Block } from "./Login.style"
+import { Words } from "./Login.style"
 
 const Login = () => {
   const [passwordVisibility, setPasswordVisibility] = React.useState<boolean>(false)
   const [backdropOpen, setBackdropOpen] = React.useState<boolean>(false)
   const [submitButtonDisabled, setSubmitButtonDisabled] = React.useState<boolean>(false)
-  const navigate = useNavigate()
+  //const history = useHistory()
 
   const {
     register,
@@ -59,15 +62,16 @@ const Login = () => {
         const refreshToken = response.data.refresh_token
         localStorage.setItem("access", accessToken)
         localStorage.setItem("refresh", refreshToken)
-        navigate("/platform/dashboard")
+        console.log("LocalStorage: " + localStorage.getItem("access"))
         setSubmitButtonDisabled(false)
         setBackdropOpen(false)
       })
       .catch((err) => {
-        if (err.response?.status) {
-          setError("username", { message: err.response?.data })
+        if (err.response.status === 403) {
+          console.log("403 not found")
+          setError("password", { message: "Username and password didn't match." })
         } else {
-          alert("Network error. Please check your connection.")
+          alert("There's an error. Please check your connection.")
         }
         setSubmitButtonDisabled(false)
         setBackdropOpen(false)

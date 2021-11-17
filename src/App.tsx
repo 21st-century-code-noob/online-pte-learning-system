@@ -1,4 +1,4 @@
-import LandingPage from "pages/landing-page/landing-page"
+import LandingPage from "pages/landing-page/LandingPage"
 import Platform from "pages/platform/Platform"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import { ThemeProvider } from "styled-components"
