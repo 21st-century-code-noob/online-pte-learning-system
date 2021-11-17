@@ -12,8 +12,6 @@ import {
 import Button from "@mui/material/Button"
 import TextField from "@mui/material/TextField"
 import axios, { AxiosRequestConfig } from "axios"
-import Footer from "pages/public-component/Footer/Footer"
-import Navbar from "pages/public-component/Navbar/Navbar"
 import React from "react"
 import { useForm } from "react-hook-form"
 import { Link } from "react-router-dom"
@@ -82,7 +80,6 @@ const Login = () => {
 
   return (
     <div>
-      <Navbar />
       <Block></Block>
       <Background>
         <Wrapper>
@@ -149,7 +146,6 @@ const Login = () => {
           </Container>
         </Wrapper>
       </Background>
-      <Footer />
       <Backdrop sx={{ color: "#fff", zIndex: "99" }} open={backdropOpen}>
         <CircularProgress color="inherit" />
       </Backdrop>

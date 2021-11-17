@@ -15,7 +15,7 @@ const SpeakingCard = () => {
     <CardWrapper>
       <Speaking />
       <FlexColumn>
-        <FunctionBar type="RA" detail="Read Aloud" num={496} linkto="/practice/speaking/RA" />
+        <FunctionBar type="RA" detail="Read Aloud" num={496} linkto="/platform/practice/speaking/RA" />
         <FunctionBar type="RS" detail="Read Sentence" num={1496} linkto="/" />
         <FunctionBar type="DI" detail="Describe Image" num={312} linkto="/" />
         <FunctionBar type="RL" detail="Retell Lecture" num={312} linkto="/" />

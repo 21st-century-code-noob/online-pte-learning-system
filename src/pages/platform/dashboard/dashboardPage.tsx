@@ -21,17 +21,10 @@ const Row = styled.div`
 
 const DashboardPage = () => {
   return (
-    <PageStyle>
-      <ScrollBackButton link="#top">Scroll Back</ScrollBackButton>
-      <Wrapper>
-        <Sidebar />
-        <Row>
-          <Navigation />
-          <Content />
-        </Row>
-      </Wrapper>
-      <Footer />
-    </PageStyle>
+    <>
+      <Navigation />
+      <Content />
+    </>
   )
 }
 

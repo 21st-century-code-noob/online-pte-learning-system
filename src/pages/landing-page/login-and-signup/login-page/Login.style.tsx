@@ -1,6 +1,5 @@
+import backimg from "assets/images/Login/Group1.png"
 import styled from "styled-components"
-
-import backimg from "../../../assets/images/Login/Group1.png"
 
 export const Container = styled.div`
   background-color: #ffff;

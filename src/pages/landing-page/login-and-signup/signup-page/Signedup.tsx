@@ -1,7 +1,5 @@
 import { Link, useLocation } from "react-router-dom"
 
-import Footer from "../../../public-component/Footer/Footer"
-import Navbar from "../../../public-component/Navbar"
 import Buttons from "../Styles/Buttons.style"
 import Title from "./components/Title/Title"
 import { Words } from "./Signedup.style"
@@ -16,7 +14,6 @@ const Signedup = (props) => {
 
   return (
     <div>
-      <Navbar />
       <Block />
       <Background>
         <Wrapper>
@@ -34,7 +31,6 @@ const Signedup = (props) => {
           </Container>
         </Wrapper>
       </Background>
-      <Footer />
     </div>
   )
 }

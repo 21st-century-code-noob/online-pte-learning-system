@@ -86,7 +86,7 @@ const Hero = () => {
           <StyledH5>The Best PTE Education</StyledH5>
           <StyledH2>Practice PTE Real Exam Questions for FREE</StyledH2>
           <StyledP>Join 100,000 PTE test takers to practice and share the latest exam questions.</StyledP>
-          <Link to="/practice">
+          <Link to="/platform/practice">
             <PracticeNowButton variant="contained" endIcon={<ArrowForwardRoundedIcon />} disableElevation>
               Practice Now
             </PracticeNowButton>
