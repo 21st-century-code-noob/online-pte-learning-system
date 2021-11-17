@@ -1,5 +1,5 @@
-import Content from "pages/practicing/PracticeHomepage/Content/Content"
-import Navigation from "pages/practicing/PracticeHomepage/Navigation/Navigation"
+import Content from "pages/platform/practicing/PracticeHomepage/Content/Content"
+import Navigation from "pages/platform/practicing/PracticeHomepage/Navigation/Navigation"
 import Footer from "pages/public-component/Footer/Footer"
 import ScrollBackButton from "pages/public-component/ScrolBackButton/ScrollBack"
 import Sidebar from "pages/public-component/Sidebar/Sidebar"

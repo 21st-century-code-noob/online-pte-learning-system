@@ -1,5 +1,5 @@
-import Background from "pages/practicing/QuestionType/PublicComponent/ForList/BackgroundCard"
-import FunctionBar from "pages/practicing/QuestionType/PublicComponent/ForList/FunctionBar"
+import Background from "pages/platform/practicing/QuestionType/PublicComponent/ForList/BackgroundCard"
+import FunctionBar from "pages/platform/practicing/QuestionType/PublicComponent/ForList/FunctionBar"
 import styled from "styled-components"
 
 const QuestionBoard = () => {

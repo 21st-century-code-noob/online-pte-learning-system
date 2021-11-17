@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom"
 
-import Footer from "../../../pages/public-component/Footer/Footer"
-import Navbar from "../../../pages/public-component/Navbar"
+import Footer from "../../../public-component/Footer/Footer"
+import Navbar from "../../../public-component/Navbar"
 import Buttons from "../Styles/Buttons.style"
 import Title from "./components/Title/Title"
 import { Words } from "./Signedup.style"

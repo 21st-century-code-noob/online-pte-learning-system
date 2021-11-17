@@ -1,5 +1,5 @@
-import Header from "pages/practicing/QuestionType/PublicComponent/ForList/Header"
-import QuestionCard from "pages/practicing/QuestionType/PublicComponent/ForQuestion/QuestionCard"
+import Header from "pages/platform/practicing/QuestionType/PublicComponent/ForList/Header"
+import QuestionCard from "pages/platform/practicing/QuestionType/PublicComponent/ForQuestion/QuestionCard"
 import styled from "styled-components"
 
 import QuestionBoard from "./Component/QuestionBoard"
